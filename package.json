@@ -5,16 +5,20 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "knex": "node --loader tsx ./node_modules/knex/bin/cli.js"
+    "knex": "node --loader tsx ./node_modules/knex/bin/cli.js",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.10.4",
+    "@types/supertest": "^6.0.2",
     "eslint": "^8.55.0",
+    "supertest": "^6.3.3",
     "tsx": "^4.6.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
   },
   "dependencies": {
     "@fastify/cookie": "^9.2.0",
